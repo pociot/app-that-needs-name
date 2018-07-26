@@ -10,14 +10,15 @@ import java.io.IOException;
 
 @Configuration
 public class MongoDBConfiguration {
-    private static final String MONGO_DB_URL = "localhost";
-    private static final String MONGO_DB_NAME = "embeded_db";
 
-    @Bean
-    public MongoTemplate mongoTemplate() throws IOException {
-        EmbeddedMongoFactoryBean mongo = new EmbeddedMongoFactoryBean();
-        mongo.setBindIp(MONGO_DB_URL);
-        MongoClient mongoClient = mongo.getObject();
-        return new MongoTemplate(mongoClient, MONGO_DB_NAME);
-    }
+  private static final String MONGO_DB_URL = "localhost";
+  private static final String MONGO_DB_NAME = "embeded_db";
+
+  @Bean
+  public MongoTemplate mongoTemplate() throws IOException {
+    EmbeddedMongoFactoryBean mongo = new EmbeddedMongoFactoryBean();
+    mongo.setBindIp(MONGO_DB_URL);
+    MongoClient mongoClient = mongo.getObject();
+    return new MongoTemplate(mongoClient, MONGO_DB_NAME);
+  }
 }

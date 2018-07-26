@@ -9,5 +9,6 @@ import lombok.ToString;
 @ToString
 @AllArgsConstructor
 public class Beer {
-    private String name;
+
+  private String name;
 }

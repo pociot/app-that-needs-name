@@ -6,5 +6,6 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 @RepositoryRestResource
 public interface BeerRepository extends MongoRepository<Beer, String> {
+
     public Beer findByName(String name);
 }
