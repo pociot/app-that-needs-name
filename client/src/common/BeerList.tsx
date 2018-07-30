@@ -24,7 +24,7 @@ class BeerList extends React.Component<{}, IBeerListState> {
   public componentDidMount() {
     this.setState({ isLoading: true })
 
-    fetch('http://localhost:8080/good-beers')
+    fetch('http://localhost:8762/api/good-beers')
     .then(response => response.json())
     .then(data => this.setState({ beers: data, isLoading: false }))
   }
