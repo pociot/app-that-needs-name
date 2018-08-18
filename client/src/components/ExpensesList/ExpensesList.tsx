@@ -20,7 +20,7 @@ class ExpensesList extends Component<TProps> {
   public render() {
     return (
       <List>
-        {this.props.expenses.entities.map(entity => {
+        {this.props.expenses.map(entity => {
           return (
             <ListItem key={entity.id}>
               <ListItemText primary={entity.title} secondary={entity.amount}/>

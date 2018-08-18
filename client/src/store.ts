@@ -1,12 +1,10 @@
 import { combineReducers, createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
-import expenses from './state/expenses'
-import entryBudget from './state/entryBudget';
+import budget from './state/budget';
 
 const reducers = combineReducers({
-  expenses,
-  entryBudget
+  budget
 });
 
 export type TRootState = ReturnType<typeof reducers>

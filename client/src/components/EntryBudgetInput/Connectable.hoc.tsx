@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
 import { TRootState } from '../../store';
-import { setEntryBudget } from '../../state/entryBudget';
+import { setEntryBudget } from '../../state/budget';
 
 const mapStateToProps = (state: TRootState) => ({
-  entryBudget: state.entryBudget
+  entryBudget: state.budget
 });
 
 const mapDispatchToProps = {

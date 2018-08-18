@@ -46,7 +46,7 @@ class EntryBudgetInput extends Component<TProps, IState> {
 
   private onSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    this.props.setEntryBudget({ amount: this.state.amount })
+    this.props.setEntryBudget({ entryBudget: this.state.amount })
   }
 }
 

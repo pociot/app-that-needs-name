@@ -1,10 +1,10 @@
 import { connect } from 'react-redux';
 import { TRootState } from '../../store';
 
-import { addExpense, deleteExpense } from '../../state/expenses';
+import { addExpense, deleteExpense } from '../../state/budget';
 
 const mapStateToProps = (state: TRootState) => ({
-  expenses: state.expenses
+  expenses: state.budget
 });
 
 const mapDispatchToProps = {
