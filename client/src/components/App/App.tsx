@@ -1,11 +1,11 @@
 import * as React from 'react';
 import './App.css';
 
-import BeerList from "./common/BeerList";
-import logo from './logo.svg';
+import logo from '../../logo.svg';
+import CashInput from '../CashInput';
+import ExpenseList from '../ExpensesList';
 
-
-class App extends React.Component<{}, any> {
+class App extends React.Component<{}> {
 
   public render() {
     return (
@@ -14,9 +14,8 @@ class App extends React.Component<{}, any> {
             <img src={logo} className="App-logo" alt="logo" />
             <h1 className="App-title">Welcome to React</h1>
           </header>
-          <div>
-            <BeerList/>
-          </div>
+          <CashInput/>
+          <ExpenseList />
         </div>
     );
   }
