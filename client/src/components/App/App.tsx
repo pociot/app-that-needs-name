@@ -2,7 +2,7 @@ import * as React from 'react';
 import './App.css';
 
 import logo from '../../logo.svg';
-import CashInput from '../CashInput';
+import CashInput from '../ExpenseInput';
 import ExpenseList from '../ExpensesList';
 
 class App extends React.Component<{}> {

@@ -11,7 +11,7 @@ interface IState {
 
 type TProps = TConnectableProps & NumberFormatProps
 
-class CashInput extends Component<TProps, IState> {
+class ExpenseInput extends Component<TProps, IState> {
   public state = {
     value: 1000
   };
@@ -45,4 +45,4 @@ class CashInput extends Component<TProps, IState> {
 
 export default compose(
     Connectable
-)(CashInput) as ComponentType<{}>;
+)(ExpenseInput) as ComponentType<{}>;
