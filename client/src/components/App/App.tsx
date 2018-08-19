@@ -6,6 +6,7 @@ import CashInput from '../ExpenseInput';
 import ExpenseList from '../ExpensesList';
 import { Grid } from '@material-ui/core';
 import EntryBudgetInput from '../EntryBudgetInput/EntryBudgetInput';
+import RemainingBudget from '../RemainingBudget/RemainingBudget';
 
 class App extends React.Component<{}> {
 
@@ -13,7 +14,7 @@ class App extends React.Component<{}> {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={logo} className="App-logo" alt="logo"/>
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <Grid
@@ -24,8 +25,11 @@ class App extends React.Component<{}> {
             <EntryBudgetInput/>
           </Grid>
           <Grid item={true} xs={6}>
-            <CashInput />
+            <CashInput/>
             <ExpenseList/>
+          </Grid>
+          <Grid item={true} xs={12}>
+            <RemainingBudget />
           </Grid>
         </Grid>
       </div>
